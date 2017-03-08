@@ -37,7 +37,8 @@ drop.get("patients", Patient.self) { request, patient in
 }
 
 drop.get("patients") { request in
-    return try JSON(node: Patient.all().makeNode())
+    return try drop.view.make("form")
+//    return try JSON(node: Patient.all().makeNode())
 
 }
 

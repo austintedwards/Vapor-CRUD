@@ -1,0 +1,22 @@
+#extend("base")
+
+#export("head") {
+	<title>My App</title>
+
+    <link href="https://fonts.googleapis.com/css?family=Quicksand:400,700,300" rel="stylesheet">
+	<link rel="stylesheet" href="/styles/app.css">
+}
+
+#export("body") {
+    <div class="form">
+        #raw() {
+        <form>
+        First Name
+        <input type="text" name="firstname"><br>
+        Last Name
+        <input type="text" name="lastname">
+        </form>
+        }
+        <h1>#(message)</h1>
+    </div>
+}
