@@ -23,7 +23,7 @@ body {
 
 .message {
 	position: absolute;
-	width: 256px;
+	width: 400px;
     height: 64px;
 	text-align: center;
 	top: 50%;
